@@ -13,35 +13,40 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!--google fonts :-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header class="container">
+    
         <div id="navbar">
             <a class="navelement current" href="index.html">Home</a>
+            
+            <a class="navelement " href="">Log in</a>
+            <a class="navelement" href="">Subscribe</a>
+
+            <img class="navelement right" id="logo"  src="image\logo22.png">
             <a class="navelement" href="#why">Guide</a>
             <a class="navelement" href="">About us</a>
-            <a class="navelement right" href="">Log in</a>
-            <a class="navelement" href="">Subscribe</a>
-            <img class="navelement" id="logo"  src="image\logo2.png">
-            
         </div>
-        <img id="brand" src="image/brand.png" class="animate__animated animate__fadeIn" >
+    <header class="container">
+        <!--<img id="brand" src="image/brandsmall2.png" >-->
         <div id="searchbloc" class="container ">
-            <button class="button animate__animated animate__headShake animate__delay-1s animate__repeat-3">Post a New Annoucement</button>
+            <button class="button animate__animated animate__headShake animate__delay-1s animate__repeat-3">Post an Annoucement</button>
             <br>
             <h2 style="font-family: 'Playfair Display', serif;">Or Search For an Offer :</h1>
+            <br>
             <form>
-                <input type="" name="" id="search" placeholder="  Enter City Name">
-                <input id="searchbtn" type="submit" value="search" >
+                <input type="" name="" id="search" placeholder="Enter City Name">
+                <input id="searchbtn" type="submit" value="search" >    
             </form>
         </div>  
     </header>
     <div id="bonde" class="container">
         <h3>Flatsharing & Appartement Renting </h3>
     </div>  
-    <article id="why" class="container" >
+    <article id="why" class="container aos-init aos-animate" data-aos="fade-up"data-aos-delay="50"data-aos-duration="1000" >
         <br>
-        <h1 class="title animate__animated animate__headShake animate__delay-1s animate__repeat-3" >Why Use elocal?</h1>
+        <h1 class="title " >Why Use elocal?</h1>
         <h3>At elocal, our priority is establishing high quality relationships </h2>
         <br>
         <table>
@@ -67,7 +72,8 @@
                 <td><button class="button">Add a Renting Annoucement  </button></td>
             </tr>
         </table> 
-    </article>  
+    </article>
+    <br>  
     <div class="cities container">
         <h1 class="title">Popular cities : </h1> 
         <div id="grid">
@@ -125,6 +131,11 @@
     </div>
     
     <!--font awsome-->
-    <script src="https://kit.fontawesome.com/391d59d3db.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/391d59d3db.js" crossorigin="anonymous"></script>   
+    <!-- Animate on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
 </body>
 </html>

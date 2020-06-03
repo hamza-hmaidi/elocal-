@@ -10,23 +10,24 @@ body{
 #navbar{
 	display: flex; 
 	flex-direction: row; 
-	height: 100px ; 
+	height: 60px ; 
 	align-items: center;
 	justify-content: flex-start;
-    background-color: rgb(255,255,255,0.3);
-    /*background-color:rgb(62, 76, 78);*/
+    /*background-color: rgb(255,255,255,0.3);*/
+    background-color: rgb(154, 170, 172);
 	position: fixed;
 	width: 100%;
 }
 #navbar .navelement{
 	text-decoration: none ; 
-	color: mediumorchid; 
+	/*color: mediumorchid;*/
+    color:white; 
 	display: flex;
 	height: 100%; 
 	align-items: center;
 	justify-content: center;
 	width: 150px ;  
-	font-size: 1.6em ;
+	font-size: 1.3em ;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 #navbar .current{
@@ -34,11 +35,11 @@ body{
 }
 #navbar a:hover{
 	text-shadow: 2px 2px 20px rgb(229, 164, 255);
-    color: rgb(50,0,0,0.5);
-    border-bottom: 5px mediumorchid solid;
+    color: rgba(0,0,80,0.3);
+    border-bottom: 2px rgba(0,0,80,0.3); solid;
 }
 #logo{
-	
+	height: 50px
 	padding-top: 20px ; /*make the logo appear clear*/
 }
 .right{
@@ -49,12 +50,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 header{
     height: 680px;
-    background-image: url(image/house.png) ;/* or use people.png and change colors */ 
+    background-image: url(image/people.jpg) ;/* or use people.png and change colors */ 
     background-position: center;
     color: mediumorchid;
+    justify-content: center;
 }
 #brand{
     height: 370px;
@@ -63,11 +66,12 @@ header{
 }    
 #searchbloc{
     width: 50%;
-    height: 245px;
-    background-color: rgba(236, 209, 240, 0.2);
+    height: 300px;
+    background-color: rgba(78, 78, 92, 0.32);
     justify-content: center;
     border-radius:.25em;
     box-shadow:0 0 .25em rgba(0,0,0,.25);
+    color: white;
 }
 #searchbloc form{
     width: 70%;
@@ -82,7 +86,7 @@ header{
     width: 30px ;
     float: right;
     flex-shrink: 3.5;
-    height: 44px ;
+    height: 50px ;
     border: none;
     color: white;
     font-weight: bold;
@@ -92,13 +96,14 @@ header{
     background-color: mediumorchid;
 }
 .button{
-    height: 50px;
-    width: 200px;
+    height: 60px;
+    width: 220px;
     border-radius: .25em;
     border-width: 0px;
     background-color:  rgb(121, 220, 238);
     color: white;
-    font-weight: bold;
+    font-weight:bolder;
+    font-size: large;
 }
 .button:hover{
     background-color:  rgb(29, 204, 235);
@@ -136,9 +141,10 @@ header{
     color : rgb(36, 73, 235);
 }
 #grid{
-    width : 55%;
+    width : 70%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .cities{
     height: 500px;
@@ -146,7 +152,7 @@ header{
 .city{
     background-color:rgb(255, 215, 255) ;
     border: solid 1px;
-    width: 190px;
+    width: 250px;
     margin: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 2s;
@@ -158,8 +164,8 @@ header{
   text-decoration: none;  
 }
 .city img{
-    width: 190px;
-    height: 190px;
+    width: 250px;
+    height: 250px;
     border-bottom: solid 3px;
     transition-duration: 2s;
 }
