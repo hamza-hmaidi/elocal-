@@ -13,7 +13,8 @@ body{
 	height: 100px ; 
 	align-items: center;
 	justify-content: flex-start;
-	background-color: rgb(255,255,255,0.3);
+    background-color: rgb(255,255,255,0.3);
+    /*background-color:rgb(62, 76, 78);*/
 	position: fixed;
 	width: 100%;
 }
@@ -37,8 +38,11 @@ body{
     border-bottom: 5px mediumorchid solid;
 }
 #logo{
-	margin-left: auto; 
+	
 	padding-top: 20px ; /*make the logo appear clear*/
+}
+.right{
+    margin-left: auto; /* put nav element in the right side of the bar*/ 
 }
 
 .container{
@@ -67,11 +71,25 @@ header{
 }
 #searchbloc form{
     width: 70%;
+    display: inline-flex;
 }
 #searchbloc input{
     align-self: center;
     width: 100%;
     height: 40px;
+}
+#searchbtn{
+    width: 30px ;
+    float: right;
+    flex-shrink: 3.5;
+    height: 44px ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color:  rgb(220, 133, 241);
+}
+#searchbtn:hover{
+    background-color: mediumorchid;
 }
 .button{
     height: 50px;
@@ -103,6 +121,7 @@ header{
 }
 #why table{
     width:35%;
+    text-align: center;
 }
 #why table tr th{
     height: 40px;
