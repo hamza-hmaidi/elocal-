@@ -1,0 +1,154 @@
+*{
+	margin: 0; 
+	padding: 0;
+}
+body{
+    color:rgb(87, 91, 94) ;
+    background-color: beige;
+}
+
+#navbar{
+	display: flex; 
+	flex-direction: row; 
+	height: 100px ; 
+	align-items: center;
+	justify-content: flex-start;
+	background-color: rgb(255,255,255,0.3);
+	position: fixed;
+	width: 100%;
+}
+#navbar .navelement{
+	text-decoration: none ; 
+	color: mediumorchid; 
+	display: flex;
+	height: 100%; 
+	align-items: center;
+	justify-content: center;
+	width: 150px ;  
+	font-size: 1.6em ;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+#navbar .current{
+    text-decoration: underline;
+}
+#navbar a:hover{
+	text-shadow: 2px 2px 20px rgb(229, 164, 255);
+    color: rgb(50,0,0,0.5);
+    border-bottom: 5px mediumorchid solid;
+}
+#logo{
+	margin-left: auto; 
+	padding-top: 20px ; /*make the logo appear clear*/
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    height: 680px;
+    background-image: url(image/house.png) ;/* or use people.png and change colors */ 
+    background-position: center;
+    color: mediumorchid;
+}
+#brand{
+    height: 370px;
+    width:600px ;
+    /*filter: sepia(100%); change brand color*/
+}    
+#searchbloc{
+    width: 50%;
+    height: 245px;
+    background-color: rgba(236, 209, 240, 0.2);
+    justify-content: center;
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+}
+#searchbloc form{
+    width: 70%;
+}
+#searchbloc input{
+    align-self: center;
+    width: 100%;
+    height: 40px;
+}
+.button{
+    height: 50px;
+    width: 200px;
+    border-radius: .25em;
+    border-width: 0px;
+    background-color:  rgb(121, 220, 238);
+    color: white;
+    font-weight: bold;
+}
+.button:hover{
+    background-color:  rgb(29, 204, 235);
+}
+#bonde{
+    background-color: rgb(8, 63, 105);
+    height : 40px;
+    justify-content: center;
+    color: white;
+}
+#why {
+    height: 500px;
+}
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+    color: rgb(36, 73, 235);
+    letter-spacing: 4px;
+    padding: 30px;
+}
+#why table{
+    width:35%;
+}
+#why table tr th{
+    height: 40px;
+    font-size: large;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#why table tr td{
+    padding: 10px 15px ;
+    text-align: center;
+}
+#why table i{
+    color : rgb(36, 73, 235);
+}
+#grid{
+    width : 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cities{
+    height: 500px;
+}
+.city{
+    background-color:rgb(255, 215, 255) ;
+    border: solid 1px;
+    width: 190px;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 2s;
+}
+.city:hover{
+    transform: scale(1.1);
+}
+.city a{
+  text-decoration: none;  
+}
+.city img{
+    width: 190px;
+    height: 190px;
+    border-bottom: solid 3px;
+    transition-duration: 2s;
+}
+.city img:hover{
+    opacity: 0.5;
+}
+.city p {
+    padding-top: 10px;
+}
+
+
