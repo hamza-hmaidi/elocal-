@@ -1,0 +1,66 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */ 
+}
+
+.container2{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 30%;
+  background-color: beige;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5em;
+}
+.modal-content .logo-form{
+  height: 100% ;
+  align-self: left ; 
+}
+.modal-content input{
+  height: 30px;
+}
+
+.modal-content form button{
+  height: 35px ; 
+  width : 65px;
+  border-radius: 10px; 
+  border : none;
+  background-color: #6598c3;
+  font-weight: bold;
+}
+.modal-content form button:hover{
+  cursor: pointer ;
+  background-color: #abe1f5;
+}
+#btns{
+  padding-top: 10px;
+}
+#closebtn{
+  background-color:  red ;
+}
+#closebtn:hover{
+  background-color: #ed4545;
+}

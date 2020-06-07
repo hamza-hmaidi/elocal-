@@ -10,9 +10,10 @@ body{
 #navbar{
 	display: flex; 
 	flex-direction: row; 
-	height: 60px ; 
+	height: 55px ; 
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: flex-start ;
+    justify-content: space-between;
     /*background-color: rgb(255,255,255,0.3);*/
     background-color: rgb(154, 170, 172);
 	position: fixed;
@@ -27,9 +28,22 @@ body{
 	align-items: center;
 	justify-content: center;
 	width: 150px ;  
-	font-size: 1.3em ;
+	font-size: 1.2em ;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+
+#navbar .navbtn{
+    background-color: #497596;
+    border : none;
+    border-radius: 20px ;
+    height: 35px ;
+    margin-right:  15px;
+}
+#navbar .navbtn:hover{
+    background-color: #4187bb ;
+    cursor: pointer;
+}
+
 #navbar .current{
     text-decoration: underline;
 }
@@ -45,6 +59,9 @@ body{
 .right{
     margin-left: auto; /* put nav element in the right side of the bar*/ 
 }
+
+
+
 
 .container{
     display: flex;
@@ -107,6 +124,7 @@ header{
 }
 .button:hover{
     background-color:  rgb(29, 204, 235);
+    cursor: pointer;
 }
 #bonde{
     background-color: rgb(8, 63, 105);

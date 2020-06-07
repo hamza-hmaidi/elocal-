@@ -2,12 +2,10 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>eLocal</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--Personal style -->
     <link rel="stylesheet" href="style.css">
-    <script src='main.js'></script>
+    <link rel="stylesheet" type="text/css" href="form.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!-- animate.css :  -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
@@ -20,14 +18,42 @@
     
         <div id="navbar">
             <a class="navelement current" href="index.html">Home</a>
-            
-            <a class="navelement " href="">Log in</a>
-            <a class="navelement" href="">Subscribe</a>
+            <!--Both <button type="submit"> and <input type="submit"> display as buttons and cause the form data to be submitted to the server.
+			The difference is that <button> can have content, whereas <input> cannot (it is a null element). While the button-text of an <input> can be specified, you cannot add markup to the text or insert a picture. So <button> has a wider array of display options.
+			Read more: https://html.com/attributes/button-type/#ixzz6OhHyOeew -->
+            <button class="navelement navbtn" type="submit">Log in</button>
+            <button class="navelement navbtn" type="submit">Sign up</button> 
 
             <img class="navelement right" id="logo"  src="image\logo22.png">
             <a class="navelement" href="#why">Guide</a>
-            <a class="navelement" href="">About us</a>
+            <a class="navelement" href=""> About us</a>
         </div>
+
+
+
+	<div id="login-modal" class="modal">
+		<div class="modal-content container2">	
+			<dir class="logo-modal">
+				<img src="image/brandsmall.png">
+			</dir>
+			<form >
+				<h1>Login</h1>
+				<div>
+				    <label for="username"><b>Email</b></label><br>
+				    <input type="text" placeholder="Enter Username" name="text" required><br>
+				</div> 
+				<div>   
+				    <label for="psw"><b>Password</b></label><br>
+				    <input type="password" placeholder="Enter Password" name="psw" required><br>
+				</div>
+			    <div id="btns">
+			    	<button type="submit" >Login</button>
+			    	<button type="button" class=" cancel" id="closebtn">Close</button>
+				</div>
+		    </form>	
+		</div>    
+	</div>
+
     <header class="container">
         <!--<img id="brand" src="image/brandsmall2.png" >-->
         <div id="searchbloc" class="container ">
@@ -137,5 +163,6 @@
     <script>
       AOS.init();
     </script> 
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
