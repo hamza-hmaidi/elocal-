@@ -23,9 +23,19 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
-  height: 36%;
   background-color: beige;
+}
+  /* just for login modal : */ 
+#login-modal .modal-content{
+    width: 50%;
+    height: 30%;
+}
+#signup-modal .modal-content{
+  width: 50%;
+  height: 77%; 
+}
+#signup-modal{
+  padding-top: 100px;
 }
 .modal-content form {
   display: flex;
@@ -58,9 +68,9 @@
 #btns{
   padding-top: 10px;
 }
-#closebtn{
+.modal .cancel{
   background-color:  red ;
 }
-#closebtn:hover{
+.modal .cancel:hover{
   background-color: #ed4545;
 }
